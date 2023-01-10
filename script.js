@@ -1,7 +1,7 @@
 console.log('script is starting');
 
 // check if user is using mobile or browser
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.matchMedia("only screen and (max-width: 760px)").matches || navigator.userAgentData.mobile
 
 // apply mobile class
 if(!!isMobile){
