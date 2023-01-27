@@ -73,7 +73,7 @@ nav {
 
 @media only screen and (max-width: 720px){
   .gsap-container-items{
-    height: 200px;
+    height: 150px;
   }
   
 }
