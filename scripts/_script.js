@@ -1,4 +1,13 @@
-console.log('script is starting');
+console.log('main script is starting');
+
+// place color on svgs
+const svgList = document.querySelectorAll('svg');
+console.log(svgList)
+svgList.forEach((el) => {
+  el.style.stroke = window.getComputedStyle(document.body).getPropertyValue('color')
+  el.style.fill = window.getComputedStyle(document.body).getPropertyValue('backgroundColor')
+
+})
 
 // check if user is using mobile or browser
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) || window.matchMedia("only screen and (max-width: 760px)").matches || navigator.userAgentData.mobile
@@ -22,19 +31,17 @@ burgerMenu.addEventListener('click', () => {
     navBarItems.style.height = `${screen.height - burgerMenu.offsetHeight}px`;
     navBarItems.style.width = `${screen.width}px`
 
-    navBarItems.classList.remove('animate-right-close')
-    navBarItems.classList.add('animate-right-open')
+    navBarItems.classList.remove('animate-right')
+    navBarItems.classList.add('animate-left')
   } else {
-    navBarItems.classList.remove('animate-right-open')
-    navBarItems.classList.add('animate-right-close')
+    navBarItems.classList.remove('animate-left')
+    navBarItems.classList.add('animate-right')
 
     // work around to display:none unable to animate as of 2023JAN09
     setTimeout(() => {
       navBarItems.style.display = "";
     },300)
   }
-
-  
 })
 
 

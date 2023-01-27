@@ -1,0 +1,56 @@
+/* ANIMATE */
+body{
+  animation: fadein ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0%{
+    opacity : 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-left{
+  position: relative;
+  animation: animateleft .4s;
+}
+
+@keyframes animateleft {
+  from { 
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.animate-right{
+  position: relative;
+  animation: animateright .4s forwards;
+}
+
+@keyframes animateright {
+  from { 
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  .darkmode-switch{
+    margin-left: 5%;
+  }
+  .navbar-menu{
+    margin-right: 5%;
+  }
+}

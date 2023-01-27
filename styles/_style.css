@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+@font-face {
+  font-family: eurostile;
+  src: url("./eurostile.TTF");
+}
+
+/* border for development */
+nav, nav > *, section {
+  border: 1px solid !important
+}
+
+:root {
+  --primary-color: #FFF;
+  --secondary-color: #000;
+  /* --dark-primary:  rgb(57, 31, 161); */
+  --dark-primary:  rgb(31, 31, 31);
+  --dark-secondary:  rgb(192, 192, 192);
+
+  --highlight: #5b7adf;
+}
+
+body {
+  font-family: eurostile, "Source Sans Pro", Helvetica, sans-serif;
+}
+
+
+
+/* DARK MODE SCHEME*/
+.darkMode{
+  background-color: var(--dark-primary);
+  color: var(--dark-secondary);
+  border-color: var(--dark-secondary);
+}
+.svgDarkMode{
+  fill: var(--dark-primary);
+  stroke: var(--dark-secondary) !important;
+}
+
+
+/* LAYOUT: Browser */
+.navbar {
+  width: 100%;
+}
+
+.navbar-burger {
+  display: none;
+}
+
+.navbar-browser {
+  display: flex;
+  justify-content: end;
+  position: sticky;
+}
+.navbar-browser > li {
+  text-align: end;
+  padding: 8px;
+}
+
+
+/* LAYOUT: Mobile */
+.mobile.navbar {
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+}
+.mobile.navbar-burger{
+  display: flex;
+  justify-content: end;
+  order : -1;
+}
+
+.mobile.navbar-burger > * {
+  padding: 16px;
+}
+.mobile.navbar-browser{
+  position: fixed;
+  right: 0;
+  background-color: rgb(228, 228, 228);
+  display: none;
+  z-index: 3;
+}
+
+
+/* ANIMATION */
+.animate-left{
+  position: relative;
+  animation: animateleft .4s;
+}
+
+@keyframes animateleft {
+  from { 
+    right: -100%;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.animate-right{
+  position: relative;
+  animation: animateright .4s forwards;
+}
+
+@keyframes animateright {
+  from { 
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+/* SVGs  */
+svg{
+  fill: var(--primary-color);
+}
+
+/* BANNER */
+button{
+  background-color: var(--primary-color);
+  border: 1px solid ;
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+}
+
+button:hover{
+  background-color:var(--highlight);
+  color: white;
+
+}
+#levitate, 
+#restore, 
+#try{
+  margin-top: 25px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+
+
+#levitate, 
+#restore{
+  display: none;
+} 
+
+.gsap-buttons{
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+}
+.banner-container {
+  height: 400px;
+  width: 700px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1024){
+  .navbar-browser{
+    background-color: red !important;
+  }
+}

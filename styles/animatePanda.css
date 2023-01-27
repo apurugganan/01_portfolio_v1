@@ -1,0 +1,179 @@
+:root {
+  --primary-color: #FFF;
+  --secondary-color: #000;
+  /* --dark-primary:  rgb(57, 31, 161); */
+  --dark-primary:  rgb(31, 31, 31);
+  --dark-secondary:  rgb(192, 192, 192);
+  --highlight: #5b7adf;
+  --style1-color: rgb(228, 228, 228);
+  --style1-bg: rgb(48, 48, 48);
+}
+
+
+.panda-space{
+  height: 130px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.panda-container{
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right:0%;
+}
+
+#panda-body{
+  width: 90%;
+  position: absolute;
+  top: 20%;
+  z-index: 2;
+}
+
+#panda-arm{
+  width: 20%;
+  position: absolute;
+  bottom: 22%;
+  z-index: 3;
+}
+
+#panda-leg{
+  width: 25%;
+  position: absolute;
+  bottom : 26%;
+  right: 5%;
+  z-index: 3;
+
+}
+
+#panda-shadow{
+  width: 85%;
+  position: absolute;
+  left: 10%;
+  bottom: 26%;
+  z-index: 1;
+
+}
+
+#panda-body{
+  animation: bodyanimate 2s forwards ;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes bodyanimate {
+  0%{
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1%);
+  }
+}
+
+#panda-arm{
+  animation: armanimate 2s forwards ;
+  animation-iteration-count: infinite;
+  
+}
+
+@keyframes armanimate {
+  0%{
+    transform: rotate(0);
+  }
+  50% {
+    transform-origin: top left;
+    transform: rotate(-15deg);
+  }
+}
+
+#panda-leg{
+  animation: leganimate 2s forwards ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leganimate {
+  0%{
+    transform: rotate(0);
+  }
+  50% {
+    transform-origin: 50% 20% ;
+    transform: rotate(-10deg);
+  }
+}
+
+#panda-shadow{
+  animation: shadowanimate 2s forwards ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shadowanimate {
+  0%{
+    width: 85%;
+  }
+  50% {
+
+    width: 88%;
+  }
+
+}
+
+.panda-container{
+  animation: containeranimate 420s forwards ;
+  animation-iteration-count: infinite;
+  /* background-color: aqua; */
+}
+
+@keyframes containeranimate {
+  0%{
+    right: 0%;
+  }
+  100%{
+    right: 120%;
+  }
+
+}
+
+@media only screen and (max-width: 720px){
+  .panda-container{
+    width: 80px;
+    height: 80px;
+  }
+  
+}
+
+/* Color Scheme */
+.panda-body-1{
+  fill:var(--primary-color);
+}
+.panda-body-1,
+.panda-body-2{
+  stroke:#231f20;
+  stroke-miterlimit:10;
+}.panda-body-2{
+  fill:#231f20;
+}
+
+.panda-arm{
+  fill:#231f20;
+  stroke:#231f20;
+  stroke-miterlimit:10;
+}
+
+.panda-leg-1{
+  fill:#231f20;
+}
+
+.panda-shadow-1{
+  fill:#cdcfd0; stroke: #cdcfd0;
+}
+
+.pandaDarkMode.panda-shadow-1{
+  fill:rgb(83, 83, 83); 
+  stroke:rgb(83, 83, 83);
+}
+
+.pandaDarkMode.panda-body-1{
+  fill:var(--dark-primary);
+}
