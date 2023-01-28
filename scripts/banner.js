@@ -37,16 +37,16 @@ gsap.set("#mouse", {
   },
 });
 
-gsap.set("#camera", {
-  css: {
-    // height: "15%",
-    width: "12%",
-    position: "absolute",
-    left: "12%",
-    bottom: "5%",
-    rotation: 0,
-  },
-});
+// gsap.set("#camera", {
+//   css: {
+//     // height: "15%",
+//     width: "12%",
+//     position: "absolute",
+//     left: "12%",
+//     bottom: "5%",
+//     rotation: 0,
+//   },
+// });
 
 gsap.set("#phone", {
   css: {
@@ -65,8 +65,8 @@ gsap.set("#book", {
     // height: "8%",
     width: "12%",
     position: "absolute",
-    left: "82%",
-    bottom: "4%",
+    left: "12%",
+    bottom: "5%",
     //  scale: 1.8,
     rotation: 0,
   },
@@ -78,14 +78,14 @@ gsap.set("#mug", {
     width: "8%",
    position: "absolute",
    left: "84%",
-    bottom: "12%",
+   bottom: "4%",
    rotation: 0
   }
 });
 
 
 //====ATTEMPT 1
-const camera = document.querySelector("#camera")
+// const camera = document.querySelector("#camera")
 const phone = document.querySelector("#phone")
 const monitor = document.querySelector("#monitor")
 const laptop = document.querySelector("#laptop")
@@ -116,13 +116,14 @@ const dirNums = [dirNum(arrayNum), dirNum(arrayNum), dirNum(arrayNum) ]
 // BUTTON COMMAND
 const levitateAll = () =>{
   levitate(monitor, ...dirNums, 50, 100, -50, -100)
-  levitate(camera, ...dirNums, 20 ,100,0,250)
+  // levitate(camera, ...dirNums, 20 ,100,0,250)
+  levitate(book, ...dirNums, 20 ,100,0,250)
   levitate(phone, ...dirNums, 10 ,55, 10,50)
   levitate(laptop, ...dirNums, 50, 200, -10, 150)
   levitate(phone, ...dirNums, 20 ,55, -10,150)
   levitate(mouse, ...dirNums, 20 ,50,-20,60)
   levitate(mug, ...dirNums, 20,200,-10,60)
-  levitate(book, ...dirNums, 20,150, -10 ,70)  
+  // levitate(book, ...dirNums, 20,150, -10 ,70)  
 }
 
 // LEVITATE: PUTTING ALL TOGETHER
@@ -170,7 +171,7 @@ document.querySelector("#restore").onclick = function(){
   gsap.killTweensOf(monitor)
   gsap.killTweensOf(book)
   gsap.killTweensOf(mug)
-  gsap.killTweensOf(camera)
+  // gsap.killTweensOf(camera)
   gsap.killTweensOf(phone)
 
  
@@ -190,13 +191,13 @@ document.querySelector("#restore").onclick = function(){
       rotation: 0
     },
   });
-  gsap.to("#camera", {
-    css: {
-      x: "0%",
-      y: "0%",
-      rotation: 0
-    },
-  });
+  // gsap.to("#camera", {
+  //   css: {
+  //     x: "0%",
+  //     y: "0%",
+  //     rotation: 0
+  //   },
+  // });
 
   gsap.to("#phone", {
     css: {
