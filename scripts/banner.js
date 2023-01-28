@@ -7,8 +7,8 @@ gsap.set(".banner-container", {
 
 gsap.set("#monitor", {
   css: {
-    // width: "50%",
-    height: "50%",
+    width: "30%",
+    // height: "50%",
     position: "absolute",
     left: "30%",
     bottom: "7%",
@@ -17,7 +17,8 @@ gsap.set("#monitor", {
 
 gsap.set("#laptop", {
   css: {
-    height: "30%",
+    // height: "30%",
+    width: "25%",
     position: "absolute",
     left: "50%",
     bottom: "5%",
@@ -27,7 +28,8 @@ gsap.set("#laptop", {
 
 gsap.set("#mouse", {
   css: {
-    height: "5%",
+    // height: "5%",
+    width: "4%",
     position: "absolute",
     left: "76%",
     bottom: "5%",
@@ -37,7 +39,8 @@ gsap.set("#mouse", {
 
 gsap.set("#camera", {
   css: {
-    height: "15%",
+    // height: "15%",
+    width: "12%",
     position: "absolute",
     left: "12%",
     bottom: "5%",
@@ -47,7 +50,8 @@ gsap.set("#camera", {
 
 gsap.set("#phone", {
   css: {
-    height: "21%",
+    // height: "21%",
+    width: "5%",
     position: "absolute",
     left: "27%",
     bottom: "5%",
@@ -58,7 +62,8 @@ gsap.set("#phone", {
 
 gsap.set("#book", {
   css: {
-    height: "8%",
+    // height: "8%",
+    width: "12%",
     position: "absolute",
     left: "82%",
     bottom: "4%",
@@ -69,7 +74,8 @@ gsap.set("#book", {
 
 gsap.set("#mug", {
   css:{
-    height: "15%",
+    // height: "15%",
+    width: "8%",
    position: "absolute",
    left: "84%",
     bottom: "12%",
