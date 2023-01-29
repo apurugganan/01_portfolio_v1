@@ -140,40 +140,77 @@
     width: 80px;
     height: 80px;
   }
+  .panda-space{
+    height: 80px;
+  }
   
 }
 
 /* Color Scheme */
+.panda-black-eye,
+.panda-ear-front,
+.panda-ear-back,
+.panda-nose,
+.panda-neck,
+.panda-tail{
+  fill : var(--secondary-color)
+}
+
+
 .panda-body-1{
   fill:var(--primary-color);
-}
-.panda-body-1,
-.panda-body-2{
-  stroke:#231f20;
+  stroke:var(--secondary-color);
   stroke-miterlimit:10;
-}.panda-body-2{
-  fill:#231f20;
+}
+
+.panda-body-2{
+  fill:var(--secondary-color);
 }
 
 .panda-arm{
-  fill:#231f20;
-  stroke:#231f20;
+  fill:var(--secondary-color);
+  stroke:var(--secondary-color);
   stroke-miterlimit:10;
 }
-
-.panda-leg-1{
-  fill:#231f20;
+.panda-leg{
+  fill:var(--secondary-color);
+}
+.panda-shadow{
+  fill:#cdcfd0; 
+  stroke: #cdcfd0;
 }
 
-.panda-shadow-1{
-  fill:#cdcfd0; stroke: #cdcfd0;
-}
-
-.pandaDarkMode.panda-shadow-1{
+/* darkmode panda */
+.pandaDarkMode.panda-shadow{
   fill:rgb(83, 83, 83); 
   stroke:rgb(83, 83, 83);
 }
 
+.pandaDarkMode.panda-black-eye,
+.pandaDarkMode.panda-ear-front,
+.pandaDarkMode.panda-ear-back,
+.pandaDarkMode.panda-nose,
+.pandaDarkMode.panda-neck,
+.pandaDarkMode.panda-tail{
+  fill :  rgb(45, 45, 45);
+}
+
+.pandaDarkMode.panda-arm{
+  fill: rgb(45, 45, 45);
+  stroke:  rgb(45, 45, 45);
+  /* stroke:  var(--dark-secondary); */
+  stroke-miterlimit:10;
+}
+.pandaDarkMode.panda-leg{
+  fill: rgb(45, 45, 45);
+  stroke: var(--dark-secondary);
+}
+
 .pandaDarkMode.panda-body-1{
-  fill:var(--dark-primary);
+  fill:var(--dark-secondary);
+  stroke:var(--dark-secondary);
+}
+
+.pandaDarkMode.panda-eye{
+  fill: var(--dark-secondary);
 }

@@ -40,7 +40,11 @@ function darkModeOn(){
   document.querySelectorAll('section').forEach( el => {
     el.classList.add("darkMode")
   });
-  document.querySelector(".panda-shadow-1").classList.add("pandaDarkMode");
+  document.querySelectorAll('[class^="panda"]').forEach( el => {
+    el.classList.add("pandaDarkMode")
+  });
+  // panda
+
   darkModeToggle.checked = true
 }
 
@@ -58,6 +62,12 @@ function darkModeOff(){
   document.querySelectorAll('section').forEach( el => {
     el.classList.remove("darkMode")
   });
-  document.querySelector(".panda-shadow-1").classList.remove("pandaDarkMode");
+  // panda
+  document.querySelectorAll('[class^="panda"]').forEach( el => {
+    el.classList.remove("pandaDarkMode")
+  });
+  document.querySelectorAll('[id^="panda"]').forEach( el => {
+    el.classList.remove("pandaDarkMode")
+  });
   darkModeToggle.checked = false;
 }
