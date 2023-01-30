@@ -214,3 +214,53 @@
 .pandaDarkMode.panda-eye{
   fill: var(--dark-secondary);
 }
+
+
+#panda-eye-big{
+  position: absolute;
+  width: 2%;
+  left: 17%;
+  top: 53%;
+  z-index: 3;
+  opacity: 0;
+}
+.panda-eye-big{
+  stroke: none;
+  position: absolute;
+  fill: var(--primary-color);
+  /* fill: red; */
+}
+
+.pandaDarkMode.panda-eye-big{
+  fill: var(--dark-secondary);
+}
+
+/* STOP ANIMATOIN*/
+.panda-container:hover, 
+.panda-container:hover #panda-arm,
+.panda-container:hover #panda-leg,
+.panda-container:hover #panda-shadow,
+.panda-container:hover #panda-body{
+  animation-play-state: paused;
+}
+
+.panda-container:hover .panda-eye{
+  fill: none;
+  stroke: none;
+}
+.panda-container:hover #panda-eye-big{
+  width: 4%;
+  top: 50%;
+  left: 20%;
+  opacity: 1;
+  transform: rotate(10deg);
+  animation: blink 5s forwards;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes blink {
+  20%,50%{
+    transform: scaleY(1%);
+  }
+
+} */
