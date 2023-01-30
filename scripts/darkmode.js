@@ -2,16 +2,16 @@
 const darkModeToggle = document.querySelector('#darkmode-toggle');
 
 // load darkmode
-console.log("isDarkMode: ", localStorage.getItem("isDarkMode"));
 if (localStorage.getItem("isDarkMode") === "true"){
   darkModeOn();
 }
 
-
-
 // darkmode toggle
 darkModeToggle.addEventListener("click", toggleDarkMode);
 
+
+
+// =============== FUNCTIONS =================================
 function toggleDarkMode(){
   const isDarkMode = localStorage.getItem("isDarkMode");
   if (isDarkMode === "false" || isDarkMode === null){

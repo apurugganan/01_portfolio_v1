@@ -67,9 +67,6 @@ nav {
   z-index: 2;
 }
 
-.gsap-container-items{
-  /* height: 300px; */
-}
 
 @media only screen and (max-width: 720px){
   .banner-container{
