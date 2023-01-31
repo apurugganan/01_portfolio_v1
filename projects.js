@@ -1,22 +1,38 @@
+// hacky object: projects
+
 const container = document.querySelector(".projects-container");
 
-const card1 = document.createElement("div");
-const card2 = document.createElement("div");
-const card3 = document.createElement("div");
-const card4 = document.createElement("div");
-const card5 = document.createElement("div");
-const card6 = document.createElement("div");
+for( let i in projects){
+  const card = document.createElement("div");
+  card.classList.add("project-card");
 
-card1.classList.add("project-card");
-card2.classList.add("project-card");
-card3.classList.add("project-card");
-card4.classList.add("project-card");
-card5.classList.add("project-card");
-card6.classList.add("project-card");
+  const div = document.createElement('div');
+  div.classList.add("proj-div");
+  div.innerHTML = projects[i].image;
+  card.appendChild(div);
+  
+  // h4
+  const h4 = document.createElement("h4");
+  h4.classList.add("proj-client")
+  h4.innerText = projects[i].client.toUpperCase();
+  card.appendChild(h4);
 
-container.appendChild(card1);
-container.appendChild(card2);
-container.appendChild(card3);
-container.appendChild(card4);
-container.appendChild(card5);
-container.appendChild(card6);
+  // image 
+  // const img = document.createElement('img');
+  // img.classList.add("proj-img");
+  // img.src = projects[i].image;
+  // card.appendChild(img);
+
+
+
+  // description
+  const p = document.createElement('p');
+  p.classList.add("proj-description");
+  p.innerText = projects[i].description;
+  card.appendChild(p);
+
+  container.appendChild(card);
+}
+
+
+
