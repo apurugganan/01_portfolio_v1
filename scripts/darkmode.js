@@ -2,9 +2,11 @@
 const darkModeToggle = document.querySelector('#darkmode-toggle');
 
 // load darkmode
-if (localStorage.getItem("isDarkMode") === "true"){
-  darkModeOn();
-}
+setTimeout(() => {
+  if (localStorage.getItem("isDarkMode") === "true"){
+    darkModeOn();
+  }
+}, 0)
 
 // darkmode toggle
 darkModeToggle.addEventListener("click", toggleDarkMode);
