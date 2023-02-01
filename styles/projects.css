@@ -32,6 +32,7 @@
   /* border: 2px solid black; */
   /* box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8; */
   box-shadow: 0 5px 5px 0 rgba(205, 212, 214, 0.5), 0 0 0 1px #ebebeb;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
