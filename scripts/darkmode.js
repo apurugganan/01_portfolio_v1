@@ -43,6 +43,9 @@ function darkModeOn(){
   document.querySelectorAll('[class^="panda"]').forEach( el => {
     el.classList.add("pandaDarkMode")
   });
+  document.querySelectorAll('[class^="prj"]').forEach( el => {
+    el.classList.add("prjDarkMode")
+  });
   // panda
 
   darkModeToggle.checked = true
@@ -68,6 +71,9 @@ function darkModeOff(){
   });
   document.querySelectorAll('[id^="panda"]').forEach( el => {
     el.classList.remove("pandaDarkMode")
+  });
+  document.querySelectorAll('[class^="prj"]').forEach( el => {
+    el.classList.remove("prjDarkMode")
   });
   darkModeToggle.checked = false;
 }

@@ -122,6 +122,7 @@
 .panda-container{
   animation: containeranimate 420s forwards ;
   animation-iteration-count: infinite;
+  /* background-color: aqua; */
 }
 
 @keyframes containeranimate {
