@@ -75,6 +75,10 @@ nav {
   .banner-intro{
     padding: 5em 0 1em 0 !important;
   }
+
+  .banner p{
+    padding: 0 3em;
+  }
   
 }
 
