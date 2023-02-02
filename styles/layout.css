@@ -19,16 +19,9 @@ nav {
   flex-direction: row;
   margin-right: 18%;
 }
-.navbar-menu > li {
-  font-size: 1.2em;
-  text-align: center;
-  padding-bottom: 15px;
-}
 
-.navbar-menu > li:first-child {
-  margin-top: 20px;
-  font-size: 1.2em;
-}
+
+
 .navbar-burger {
   display: none;
 } 

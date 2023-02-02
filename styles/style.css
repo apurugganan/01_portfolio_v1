@@ -56,6 +56,8 @@ svg{
 }
 .mobile.navbar-menu {
   background-color: var(--style1-color);
+  text-align: center;
+
 
 }
 .mobile.navbar-menu.darkMode{
@@ -63,8 +65,15 @@ svg{
 }
 
 .mobile.navbar-menu li {
-  padding-left: 0;
+  font-size: 1.2em;
+  padding: 10px 0;
 } 
+
+.mobile.navbar-menu li:hover {
+  background-color: #a3a3a3;
+  color: var(--dark-primary)
+} 
+
 
 .style1.darkMode{
   background-color: var(--style1-bg)!important;
