@@ -309,4 +309,15 @@ footer a{
     width: 90px;
   }
 
+  .four-container{
+    display: block;
+    padding-top: 2em;
+
+  }
+
+  .four-container > * {
+      margin-left: auto;
+      margin-right: auto;
+  }
+
 }
