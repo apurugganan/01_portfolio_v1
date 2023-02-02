@@ -6,7 +6,7 @@ setTimeout(() => {
   if (localStorage.getItem("isDarkMode") === "true"){
     darkModeOn();
   }
-}, 0)
+}, 100)
 
 // darkmode toggle
 darkModeToggle.addEventListener("click", toggleDarkMode);
