@@ -34,7 +34,7 @@ nav.darkMode {
 }
 
 
-.fa-linkedin{
+.navbar-menu .fa-linkedin{
   color: #0077B5;
   /* font-size: 1.1em; */
 }
@@ -165,10 +165,10 @@ input:checked + .slider:before {
 }
 
 .style2{
-  height: 95vh;
+  /* height: 45vh; */
   width: 100vw;
   max-width: 100%;
-  padding: 5em 0;
+  padding: 3.5em 0;
 
   justify-content: center;
 }
@@ -202,6 +202,36 @@ h2::after{
   align-items: center;
 }
 
+#four{
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center ;
+}
+.four-container{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 80%;
+}
+
+.four-container > .four-text{
+  width: 60%;
+  max-width: 560px;
+}
+.four-container > .four-pic {
+  width:30%;
+  max-width: 300px;
+}
+
+
+.four-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+
+}
+
 p {
   padding: 5px 0;
   line-height: 1.5em;
@@ -212,15 +242,41 @@ a {
   text-decoration: none;
 }
 
+#profile-pic{
+  border-radius: 50%;
+  width: 80%;
+  max-width: 200px;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3em 0;
+  width: 100vw;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2em;
+}
+
+footer a{
+  font-size: 1.5em;
+  padding: 0 .25em;
+}
+
+
+
+
 /* MOBILE */
 @media only screen and (max-width: 720px){
   .banner-container {
     /* height: 250px; */
-    width: 100%;
+    width: 60%;
   }
-
-
-
   .style1{
     padding: 1em 1em;
 

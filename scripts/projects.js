@@ -15,12 +15,13 @@ for( let i in projects){
   h4.innerText = projects[i].client.toUpperCase();
   card.appendChild(h4);
 
+  // gif img
   const overlay = document.createElement('img');
   overlay.classList.add("project-gif");
   overlay.src = projects[i].gif
   card.appendChild(overlay)
 
-
+  //
 
   container.appendChild(card);
 }
