@@ -228,6 +228,7 @@ h2::after{
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   pointer-events: none;
 
 }
@@ -309,7 +310,7 @@ footer a{
     width: 90px;
   }
 
-  /* .four-container{
+  .four-container{
     display: block;
     padding-top: 2em;
 
@@ -318,6 +319,10 @@ footer a{
   .four-container > * {
       margin-left: auto;
       margin-right: auto;
-  } */
+  }
+
+  .four-pic{
+    margin-top: 2em;
+  }
 
 }
