@@ -254,7 +254,7 @@ footer{
   flex-direction: row;
   justify-content: center;
   padding: 3em 0;
-  width: 100vw;
+  width: 100%;
 }
 
 footer ul{
@@ -309,7 +309,7 @@ footer a{
     width: 90px;
   }
 
-  .four-container{
+  /* .four-container{
     display: block;
     padding-top: 2em;
 
@@ -318,6 +318,6 @@ footer a{
   .four-container > * {
       margin-left: auto;
       margin-right: auto;
-  }
+  } */
 
 }
