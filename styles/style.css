@@ -321,6 +321,10 @@ footer a{
       margin-right: auto;
   }
 
+  .four-text{
+    width:80% !important;
+  }
+
   .four-pic{
     margin-top: 2em;
   }

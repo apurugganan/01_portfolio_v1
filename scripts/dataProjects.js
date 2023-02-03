@@ -21,6 +21,6 @@ const projects = [
     client : "kombucha guide",
     description : "some description",
     gif :"./assets/kg.gif",
-    logo : '<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.16 20.2"><defs><style>.kg-1{letter-spacing:0em;}.kg-2{font-family:MinionConceptRoman-Bold, \'Minion Variable Concept\';font-size:17px;font-variation-settings:\'wght\' 700, \'opsz\' 11;}</style></defs><g id="Layer_1-2"><text class="kg-2" transform="translate(0 14.02)"><tspan class="kg-1" x="0" y="0">K</tspan><tspan x="11.54" y="0">G</tspan></text></g></svg>',
+    logo : '<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.16 20.2"><defs><style>.kg-1{letter-spacing:0em;}.kg-2{font-family:serif, \'Minion Variable Concept\';font-size:17px;font-variation-settings:\'wght\' 700, \'opsz\' 11;}</style></defs><g id="Layer_1-2"><text class="kg-2" transform="translate(0 14.02)"><tspan class="kg-1" x="0" y="0">K</tspan><tspan x="11.54" y="0">G</tspan></text></g></svg>',
   },
 ]
