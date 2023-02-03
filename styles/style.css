@@ -310,6 +310,20 @@ footer a{
     width: 90px;
   }
 
+  .two-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .two-text{
+    width: 80% !important;
+    display: block;
+        
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .four-container{
     display: block;
     padding-top: 2em;
@@ -317,8 +331,8 @@ footer a{
   }
 
   .four-container > * {
-      margin-left: auto;
-      margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .four-text{
